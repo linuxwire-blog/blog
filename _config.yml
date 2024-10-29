@@ -18,16 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: The LinuxWire Blog
+email: furtechtime@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I am a sleepy, queer, undergraduate mathematics student. I love algorithms, theoretical computer science, pure math, and any research at all that involves the three. I hope to share what I learn as a student as well as explore some intresting mathematical concepts in this blog. My love for all of this started when I first started using linux 5 years ago... 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://linuxwire.net" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  linuxwire-blog
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
@@ -37,6 +34,13 @@ plugins:
   - jekyll-include-cache
 
 defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
   # _posts
   - scope:
       path: ""
