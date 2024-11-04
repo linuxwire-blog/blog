@@ -33,7 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-nav:
+header_nav:
   - title: "Home"
     url: /
   - title: "About"
