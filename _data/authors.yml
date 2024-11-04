@@ -1,6 +1,6 @@
 default:
   name: "Celestia"
-  avatar: "_assets/images/cappyblappy.jpg"  # Path to avatar image
+  avatar: "_assets/images/cappyblappy.jpg"
   bio: "A 19 y/o queer and trans theoretical computer science and mathematics undergraduate."
   location: "Florida USA"
   links:
