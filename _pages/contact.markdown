@@ -1,8 +1,7 @@
-# _pages/contact.md
 ---
 layout: single
 title: "Contact Me"
 permalink: /contact/
 ---
 
-This is the Contact page. Add your content here.
+This is the About page. Add your content here.
