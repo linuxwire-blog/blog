@@ -1,9 +1,9 @@
 default:
   name: "Celestia"
-  avatar: "cappyblappy.jpg"  # Path to avatar image
-  bio: "A queer and trans theoretical computer science and mathematics undergraduate."
+  avatar: "_assets/images/cappyblappy.jpg"  # Path to avatar image
+  bio: "A 19 y/o queer and trans theoretical computer science and mathematics undergraduate."
   location: "Florida USA"
   links:
     - label: "GitHub"
       icon: "fab fa-github"  # Font Awesome icon classes
-      url: "https://github.com/linuxwwire-blog"
+      url: "https://github.com/linuxwire-blog"
