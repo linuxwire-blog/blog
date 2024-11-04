@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: categories
 title: "Home"
 permalink: /
 entries_layout: list  # Use 'grid' if you prefer a grid layout
