@@ -33,14 +33,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-main:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Contact Me"
-    url: /contact/
-
 defaults:
   # _pages
   - scope:
