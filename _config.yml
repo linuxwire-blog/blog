@@ -1,84 +1,66 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
+# --- Site ---
 title: The LinuxWire Blog
 email: furtechtime@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I am a sleepy, queer, undergraduate mathematics student. I love algorithms, theoretical computer science, pure math, and any research at all that involves the three. I hope to share what I learn as a student as well as explore some intresting mathematical concepts in this blog. My love for all of this started when I first started using linux 5 years ago... 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://linuxwire.net" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  linuxwire-blog
+description: >-
+  I am a sleepy, queer, undergraduate mathematics student. I love algorithms, theoretical computer science, pure math, and any research at all that involves the three. I hope to share what I learn as a student as well as explore some intresting mathematical concepts in this blog. My love for all of this started when I first started using linux 5 years ago...
+url: "https://linuxwire.net"
+baseurl: ""    # e.g., /blog if publishing under a subpath
+github_username: linuxwire-blog
+timezone: America/New_York
 
-# Build settings
+# --- Theme ---
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark"
+
+# --- Plugins (GitHub Pages-compatible) ---
 plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-mathjax
   - jekyll-remote-theme
+  # - jekyll-paginate    # uncomment if you add paginate: below
 
+# Optional: nice URLs like /category/title/
+permalink: /:categories/:title/
+
+# Optional: enable MathJax helpers in Minimal Mistakes
+mathjax: true
+
+# --- Defaults (apply theme layouts & options automatically) ---
 defaults:
-  # _pages
+  # Pages
   - scope:
       path: ""
       type: pages
     values:
-      classes: wide   
+      layout: single
       author_profile: true
-  # _posts
+
+  # Posts
   - scope:
       path: ""
-      classes: wide
+      type: posts
     values:
-      layout: post  # Change from "single" to "post"
+      layout: single        # Minimal Mistakes uses 'single' for posts & pages
+      classes: wide         # <-- makes post content column wider
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
 
+# --- Header ---
 header:
   nav:
     enabled: true
 
+# --- Include (only if you actually have these folders) ---
 include:
   - _pages
-  - _posts
-  - _assets
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  # You do NOT need to include _posts (Jekyll processes it automatically)
+  # Add assets folders here only if they start with an underscore:
+  # - _assets
+
+# If you later add pagination:
+# paginate: 5
+# paginate_path: "/page:num/"
