@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Arbitrary Computations on Infinite Chessboards"
+date:   2025-10-26 1:51:00 -0400
+categories: computation recreational
+---
+
 # Arbitrary Computation on Infinite Chessboards
 Recently, I watched a YouTube video by [Wrath of Math](https://youtu.be/0_Qe_0aj4eEM?si=HFrCcPmOmu88-fIP), entitled "Why You Can't Bring Checkerboards to Math Exams". Here, he demonstrates a binary multiplication and division algorithm for 8-bit integers. While multiplication and division are interesting as they are, I immediately wondered what if I wanted to compute *anything* on a chessboard, and this sent me down a rabbit hole.
 
