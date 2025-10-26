@@ -1,66 +1,48 @@
-# --- Site ---
 title: The LinuxWire Blog
 email: furtechtime@gmail.com
 description: >-
   I am a sleepy, queer, undergraduate mathematics student. I love algorithms, theoretical computer science, pure math, and any research at all that involves the three. I hope to share what I learn as a student as well as explore some intresting mathematical concepts in this blog. My love for all of this started when I first started using linux 5 years ago...
 url: "https://linuxwire.net"
-baseurl: ""    # e.g., /blog if publishing under a subpath
+baseurl: ""
 github_username: linuxwire-blog
 timezone: America/New_York
+future: true        # <-- allows future-dated posts to publish
 
-# --- Theme ---
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: "dark"
 
-# --- Plugins (GitHub Pages-compatible) ---
 plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-mathjax
   - jekyll-remote-theme
-  # - jekyll-paginate    # uncomment if you add paginate: below
 
-# Optional: nice URLs like /category/title/
-permalink: /:categories/:title/
+# Use classic dated permalinks so old expectations still work
+permalink: /:categories/:year/:month/:day/:title/
 
-# Optional: enable MathJax helpers in Minimal Mistakes
-mathjax: true
-
-# --- Defaults (apply theme layouts & options automatically) ---
 defaults:
-  # Pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-
-  # Posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: single        # Minimal Mistakes uses 'single' for posts & pages
-      classes: wide         # <-- makes post content column wider
+      layout: single
+      classes: wide
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
 
-# --- Header ---
 header:
   nav:
     enabled: true
 
-# --- Include (only if you actually have these folders) ---
+# You do NOT need to include _posts; Jekyll always processes it
 include:
   - _pages
-  # You do NOT need to include _posts (Jekyll processes it automatically)
-  # Add assets folders here only if they start with an underscore:
-  # - _assets
-
-# If you later add pagination:
-# paginate: 5
-# paginate_path: "/page:num/"
