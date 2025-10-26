@@ -33,6 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-mathjax
+  - jekyll-remote-theme
 
 defaults:
   # _pages
@@ -47,7 +48,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: post  # Change from "single" to "post"
+      layout: single  # Change from "single" to "post"
       author_profile: true
       read_time: true
       comments: true
