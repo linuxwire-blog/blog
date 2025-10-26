@@ -41,14 +41,14 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: single
+      classes: wide   
       author_profile: true
   # _posts
   - scope:
       path: ""
-      type: posts
+      classes: wide
     values:
-      layout: single  # Change from "single" to "post"
+      layout: post  # Change from "single" to "post"
       author_profile: true
       read_time: true
       comments: true
