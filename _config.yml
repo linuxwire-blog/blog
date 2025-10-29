@@ -9,6 +9,8 @@ github_username: linuxwire-blog
 timezone: America/New_York
 future: true
 
+markdown: kramdown
+
 # --- Theme ---
 theme: jekyll-theme-clean-blog
 minimal_mistakes_skin: "dark"
