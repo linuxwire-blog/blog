@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Arbitrary Computations on Infinite Chessboards"
 date:   2025-10-26 1:51:00 -0400
 categories: computation recreational
