@@ -1,7 +1,5 @@
 ---
-layout: single
-title: "Contact Me"
-permalink: /contact/
+layout: page
+title: "Contact"
+description: "Get in touch"
 ---
-
-This is the About page. Add your content here.
