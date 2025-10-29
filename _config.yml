@@ -10,6 +10,10 @@ timezone: America/New_York
 future: true
 
 markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  math_engine_opts: {}
 math: true
 
 # --- Theme ---
@@ -57,5 +61,3 @@ header:
 include:
   - _pages
   # You do NOT need to include _posts; Jekyll processes it automatically
-includes:
-  - head-custom.html
