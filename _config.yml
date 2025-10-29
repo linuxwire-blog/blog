@@ -57,3 +57,5 @@ header:
 include:
   - _pages
   # You do NOT need to include _posts; Jekyll processes it automatically
+includes:
+  - head-custom.html
