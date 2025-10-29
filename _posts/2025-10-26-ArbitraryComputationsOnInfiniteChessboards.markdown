@@ -34,11 +34,11 @@ To construct our new model of computation, we take heavy inspiration from the or
 
 The head is able to make 3-move sequences to move exactly one square to the left or right, positioning it to read and write for arbitrary squares on the memory row:
 
-![GIF of the read and 1-write head moving 1 square to the right.](https://raw.githubusercontent.com/linuxwire-blog/blog/blob/main/_assets/images/chessboard/ApronusDiagram1761498967.gif)
+![GIF of the read and 1-write head moving 1 square to the right.](https://raw.githubusercontent.com/linuxwire-blog/blog/main/_assets/images/chessboard/ApronusDiagram1761498967.gif)
 
 We will define $M_{d2\rightarrow c2} K$ to denote the movement of the head from the square d2 to c2, respectively. A read by the knight can then be described as an attempted capture on a square on memory row. If the capture is successful, the machine reads a 0, and if the capture is unsuccessful, the knight reads a 1. After an attempted read, the knight will always make one move back to its starting position. We will denote a read on cell $\alpha$ on memory row as $O_\alpha$. If a knight reads a 0, the piece will be destroyed, leaving a 1 in its place. Thus, to preserve the information on the tape, after the knight returns to its starting position, all the pawns in the succeeding rows must move down exactly one square to reset the machine. 
 
-![The set of moves that denote a read of 0 on column d of the input tape.](https://raw.githubusercontent.com/linuxwire-blog/blog/blob/main/_assets/images/chessboard/ApronusDiagram1761499727.gif)
+![The set of moves that denote a read of 0 on column d of the input tape.](https://raw.githubusercontent.com/linuxwire-blog/blog/main/_assets/images/chessboard/ApronusDiagram1761499727.gif)
 
 To write a one on column $\beta$, the knight captures on that square. But to write a 0, all the pawns on a given column need to move down exactly one square to write a 1. Thus, the task of writing is divided into two different structures, unlike the typical Turing machine. 
 
