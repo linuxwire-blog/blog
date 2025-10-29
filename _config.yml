@@ -10,7 +10,7 @@ timezone: America/New_York
 future: true
 
 # --- Theme ---
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+theme: jekyll-theme-clean-blog
 minimal_mistakes_skin: "dark"
 
 # --- Plugins (GitHub Pages compatible) ---
