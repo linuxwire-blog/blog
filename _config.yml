@@ -10,6 +10,7 @@ timezone: America/New_York
 future: true
 
 markdown: kramdown
+math: true
 
 # --- Theme ---
 theme: jekyll-theme-clean-blog
