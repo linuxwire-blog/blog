@@ -4,46 +4,36 @@ email: furtechtime@gmail.com
 description: >-
   I am a 20 year student majoring in interdisciplinary mathematical sciences and minoring in data sciences. 
 url: "https://linuxwire.net"
-baseurl: ""
+baseurl: ""               # keep empty for root-domain deploy
 github_username: linuxwire-blog
 timezone: America/New_York
 future: true
-hero_image: /assets/images/qcbackground.jpg
+
 # --- Theme ---
 theme: jekyll-theme-clean-blog
-# remove: minimal_mistakes_skin
 
 # --- Plugins (GitHub Pages compatible) ---
 plugins:
   - jekyll-feed
   - jekyll-include-cache
-  # You don't need jekyll-mathjax if you're adding the CDN script via _includes/scripts.html
-  # - jekyll-mathjax
-  # jekyll-remote-theme is only needed when you use `remote_theme: ...`
-  # - jekyll-remote-theme
 
-# Optional: a site-wide fallback hero image
+# Optional: site-wide fallback hero image (store it once)
 hero_image: /assets/images/qcbackground.jpg
 
 # --- Layout defaults ---
 defaults:
-  # All posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: post              # Clean Blog's post layout
-      header-img: "{{ site.hero_image }}"  # default hero background
-      # image: "{{ site.hero_image }}"     # some forks use `image` — we set both below
-
-  # All pages (about, contact, etc.)
+      layout: post
+      header-img: /assets/images/qcbackground.jpg   # <-- literal path, no Liquid
   - scope:
       path: ""
       type: pages
     values:
-      layout: page              # Clean Blog's page layout
-      header-img: "{{ site.hero_image }}"
+      layout: page
+      header-img: /assets/images/qcbackground.jpg
 
 # --- Permalinks ---
 permalink: /:categories/:year/:month/:day/:title/
-
