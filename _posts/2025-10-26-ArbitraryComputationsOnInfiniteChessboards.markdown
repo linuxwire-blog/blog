@@ -5,7 +5,7 @@ date:   2025-10-26 1:51:00 -0400
 categories: computation recreational
 tags: [Theoretical Computer Science]
 math: true
-background: "{{ '/assets/chessboard.jpg' | relative_url }}"
+background: "../assets/qcbackground.jpg"
 ---
 
 # Arbitrary Computation on Infinite Chessboards
