@@ -67,6 +67,7 @@ It should be noted here that our initial alphabet and tape alphabet $\Sigma$ and
 The head can make 3-move sequences to move exactly one square to the left or right, positioning it to read and write for arbitrary squares on the memory row:
 
 ![GIF of the read and 1-write head moving 1 square to the right.](https://raw.githubusercontent.com/linuxwire-blog/blog/main/_assets/images/chessboard/ApronusDiagram1761498967.gif)
+
 Let $M_{d\rightarrow c}$ denote the movement of the head from column d to c on row two, respectively. With the movement of the head defined, we can now define the process of reading and writing on our chess-based Turing Machine.
 
 Since we have exhausted the purpose of movements in defining the head, the only action left to work with is the act of capturing. Thus, we define a "read" by the knight to be an attempted capture on a square on the memory row. If the capture is successful, the machine reads a 0, since a pawn on a square denotes a 0; if the capture is unsuccessful, the knight reads a 1. After an attempted read, the knight will always make one move back to its starting position. We will denote a read on cell $\alpha$ on memory row as $I_\alpha$. If a knight reads a 0, the piece will be destroyed, leaving a 1 in its place. Thus, to preserve the information on the tape, after the knight returns to its starting position, all the pawns in the succeeding rows must move down exactly one square to reset the machine. 
