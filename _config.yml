@@ -28,12 +28,14 @@ defaults:
     values:
       layout: post
       header-img: /assets/images/qcbackground.jpg   # <-- literal path, no Liquid
+      background: /assets/images/qcbackground.jpg 
   - scope:
       path: ""
       type: pages
     values:
       layout: page
       header-img: /assets/images/qcbackground.jpg
+      background: /assets/images/qcbackground.jpg 
 
 # --- Permalinks ---
 permalink: /:categories/:year/:month/:day/:title/
