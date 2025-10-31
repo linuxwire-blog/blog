@@ -6,6 +6,7 @@ categories: computation recreational
 tags: [Theoretical Computer Science]
 math: true
 background: "/assets/chessboard.jpg"
+header-img: "/assets/chessboard.jpg"
 ---
 
 # Arbitrary Computation on Infinite Chessboards
