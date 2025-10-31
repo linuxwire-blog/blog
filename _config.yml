@@ -8,6 +8,7 @@ baseurl: ""
 github_username: linuxwire-blog
 timezone: America/New_York
 future: true
+hero_image: /assets/images/qcbackground.jpg
 # --- Theme ---
 theme: jekyll-theme-clean-blog
 # remove: minimal_mistakes_skin
